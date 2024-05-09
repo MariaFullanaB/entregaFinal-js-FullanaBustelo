@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraíso Felino - Tienda</title>
+    <script src="../js/gsap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#">
+                    <img src="../recursos/paraiso.felino.png" alt="Logo de Paraíso Felino" class="logo">
+                </a>
+                <div class="carrito-icon" onclick="mostrarCarrito()">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrito-counter" id="carrito-counter">Carrito</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="titulo-principal">Tienda Paraíso Felino</h1> 
+
+    <section class="tienda-section">
+        <div class="container">
+            <h2 class="titulo-seccion">Tienda de Juguetes para Gatos</h2>
+            <div class="row" id="tienda-productos">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="https://www.instagram.com/lacasadepipo/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/maria.fullana.1/" target="_blank">Facebook</a>
+            <h2>Paraíso Felino - Todos los derechos reservados</h2>
+        </div>
+    </footer>
+
+    <div class="mensaje" id="mensaje"></div>
+
+    <div class="carrito-popup" id="carrito-popup">
+        <div class="carrito-content">
+            <span class="close" onclick="cerrarCarrito()">&times;</span>
+            <p>Agregado: <span id="carrito-nombre">Carrito de Compras</span></p>
+            <ul id="carrito-lista"></ul>
+            <div class="carrito-total">
+                Total: <span id="carrito-total">$0.00</span>
+            </div>
+            <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+            <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+        </div>
+    </div>
+    
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
+

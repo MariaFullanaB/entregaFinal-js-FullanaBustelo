@@ -1,6 +1,5 @@
 let carrito = [];
-let productos = []; // Declaración única de la variable productos
-
+let productos = []; 
 window.onload = function() {
     cargarCarritoDesdeLocalStorage();
     actualizarCarrito();
@@ -18,7 +17,7 @@ function cargarProductosDesdeServidor() {
 }
 
 function mostrarProductos() {
-    let tiendaProductos = document.getElementById('tienda-productos'); // Mover la declaración de tiendaProductos aquí
+    let tiendaProductos = document.getElementById('tienda-productos'); 
     tiendaProductos.innerHTML = '';
     productos.forEach((producto, index) => {
         let card = document.createElement('div');
@@ -51,11 +50,11 @@ function actualizarCarrito() {
     let carritoTotal = document.getElementById('carrito-total');
     let carritoLista = document.getElementById('carrito-lista');
 
-    // Actualiza el contenido del contador del carrito
+
     if (carrito.length > 0) {
-        carritoCounter.innerText = carrito.length; // Si hay elementos en el carrito, muestra la cantidad de elementos
+        carritoCounter.innerText = carrito.length; 
     } else {
-        carritoCounter.innerText = "Carrito"; // Si el carrito está vacío, muestra "Carrito"
+        carritoCounter.innerText = "Carrito"; 
     }
 
     carritoTotal.innerText = `$${total}`;

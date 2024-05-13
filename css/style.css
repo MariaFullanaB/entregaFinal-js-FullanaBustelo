@@ -72,18 +72,22 @@ body {
 }
 
 .card-img-top {
-    width: 100%;
+    width: 40%;
     height: auto;
 }
 
 .card-body {
     padding: 20px;
+    align-items: center; 
 }
 
 .card-title {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 1.25rem;
+    flex: 1; 
+    margin-right: 10px; 
+    max-width: 70%; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
 }
 
 .card-text {

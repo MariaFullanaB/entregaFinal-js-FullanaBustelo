@@ -24,7 +24,7 @@ function mostrarProductos() {
         card.className = 'card';
         card.style.opacity = 0;
         card.innerHTML = `
-            <img src="recursos/${producto.imagen}" alt="${producto.nombre}" class="card-img-top">
+       <img src="../recursos/${producto.imagen}" alt="${producto.nombre}" class="card-img-top">
             <div class="card-body">
                 <h5 class="card-title">${producto.nombre}</h5>
                 <p class="card-text">Precio: $${producto.precio.toFixed(2)}</p>

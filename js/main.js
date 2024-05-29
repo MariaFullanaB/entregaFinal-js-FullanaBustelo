@@ -7,7 +7,7 @@ window.onload = function() {
 };
 
 function cargarProductosDesdeServidor() {
-    fetch("../data/productos.json")
+    fetch("./data/productos.json")
         .then(response => response.json())
         .then(data => {
             productos = data;

@@ -67,14 +67,18 @@ function actualizarCarrito() {
     });
 }
 
+function mostrarMensaje(mensaje) {
+    var mensajeDiv = document.getElementById("mensaje");
+    mensajeDiv.textContent = mensaje;
+    mensajeDiv.style.display = "block";
+    setTimeout(function() {
+        mensajeDiv.style.display = "none";
+    }, 2000);
+}
 
-function mostrarMensaje(texto) {
-    let mensaje = document.getElementById('mensaje');
-    mensaje.innerText = texto;
-    mensaje.style.display = 'none';
-    setTimeout(() => {
-        mensaje.style.display = 'none';
-    }, 3000);
+function agregarAlCarrito() {
+
+    mostrarMensaje("Producto agregado con éxito");
 }
 
 function mostrarCarrito() {

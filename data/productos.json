@@ -2,21 +2,21 @@
     {
         "nombre": "Juguete de Plumas",
         "precio": 12.99,
-        "imagen": "./juguete1.jpg"
+        "imagen": "juguete1.jpg"
     },
     {
         "nombre": "Pelota Brillante",
         "precio": 8.99,
-        "imagen": "./juguete2.jpg"
+        "imagen": "juguete2.jpg"
     },
     {
         "nombre": "Túnel de Juego",
         "precio": 19.99,
-        "imagen": "./juguete3.jpg"
+        "imagen": "juguete3.jpg"
     },
     {
         "nombre": "Torre de Rascado",
         "precio": 29.99,
-        "imagen": "./juguete4.jpg"
+        "imagen": "juguete4.jpg"
     }
 ]
